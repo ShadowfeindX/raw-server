@@ -1,0 +1,31 @@
+#ifndef HEADERS_HXX
+#define HEADERS_HXX
+
+#include <QDebug>
+#include <QtCore>
+#include <QtCoreDepends>
+#include <QtNetwork>
+#include <QtNetworkDepends>
+#include <QtConcurrent>
+#include <QtConcurrentDepends>
+
+using Core = QCoreApplication;
+using Socket = QTcpSocket;
+using Server = QTcpServer;
+using Object = QObject;
+using File = QFile;
+using Bytes = QByteArray;
+using Str = QString;
+using StrL = QStringList;
+template <typename K, typename V>
+using Map = QMap<K,V>;
+using Json = QJsonDocument;
+using JObject = QJsonObject;
+using JArray = QJsonArray;
+using JValue = QJsonValue;
+
+#define qin QTextStream(stdin)
+#define qout QTextStream(stdout)
+#define qerr QTextStream(stderr)
+
+#endif // HEADERS_HXX
